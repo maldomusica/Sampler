@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="NWDEVd" name="Sampler" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn"
+              pluginManufacturer="Maldo" pluginVST3Category="Sampler">
+  <MAINGROUP id="Imw4TI" name="Sampler">
+    <GROUP id="{140DD837-95E3-CFE1-75C7-6D1644A5FAFF}" name="Source">
+      <GROUP id="{1C2CEAA5-7B91-7DC1-09FA-700652B6BEA8}" name="LookAndFeel">
+        <FILE id="y3Y55w" name="KnobLookAndFeel.h" compile="0" resource="0"
+              file="Source/LookAndFeel/KnobLookAndFeel.h"/>
+      </GROUP>
+      <GROUP id="{D68966D8-1D30-4CF6-3461-F98A7EE84F9B}" name="Assets">
+        <FILE id="Rqtt2f" name="knob.png" compile="0" resource="1" file="Assets/knob.png"/>
+        <FILE id="TD1sxA" name="backg.png" compile="0" resource="1" file="Assets/backg.png"/>
+      </GROUP>
+      <GROUP id="{19BAE7F2-3443-956F-30F0-501034917043}" name="DSP">
+        <FILE id="K6BY6A" name="StateVariableFilter.h" compile="0" resource="0"
+              file="Source/DSP/StateVariableFilter.h"/>
+        <FILE id="E5vHIa" name="StateVariableFilter.cpp" compile="1" resource="0"
+              file="Source/DSP/StateVariableFilter.cpp"/>
+        <FILE id="cpGei5" name="Filter.h" compile="0" resource="0" file="Source/DSP/Filter.h"/>
+        <FILE id="M0Uy20" name="Filter.cpp" compile="1" resource="0" file="Source/DSP/Filter.cpp"/>
+        <FILE id="xrkCxt" name="ADSR.cpp" compile="1" resource="0" file="Source/DSP/ADSR.cpp"/>
+        <FILE id="NTx7vD" name="ADSR.h" compile="0" resource="0" file="Source/DSP/ADSR.h"/>
+        <FILE id="PduHZg" name="DryWet.cpp" compile="1" resource="0" file="Source/DSP/DryWet.cpp"/>
+        <FILE id="udqW6K" name="DryWet.h" compile="0" resource="0" file="Source/DSP/DryWet.h"/>
+        <FILE id="xWNOhA" name="Distortion.h" compile="0" resource="0" file="Source/DSP/Distortion.h"/>
+        <FILE id="gkeye2" name="Distortion.cpp" compile="1" resource="0" file="Source/DSP/Distortion.cpp"/>
+        <FILE id="XNxEwu" name="Gain.cpp" compile="1" resource="0" file="Source/DSP/Gain.cpp"/>
+        <FILE id="cwz2eY" name="Gain.h" compile="0" resource="0" file="Source/DSP/Gain.h"/>
+        <FILE id="yBVMrm" name="LFO.cpp" compile="1" resource="0" file="Source/DSP/LFO.cpp"/>
+        <FILE id="eKoufz" name="LFO.h" compile="0" resource="0" file="Source/DSP/LFO.h"/>
+        <FILE id="gfWiIF" name="Pan.h" compile="0" resource="0" file="Source/DSP/Pan.h"/>
+        <FILE id="wZyVee" name="Pan.cpp" compile="1" resource="0" file="Source/DSP/Pan.cpp"/>
+      </GROUP>
+      <FILE id="A1XOW8" name="sampler_Waveform.cpp" compile="1" resource="0"
+            file="Source/sampler_Waveform.cpp"/>
+      <FILE id="D5wdqv" name="sampler_Waveform.h" compile="0" resource="0"
+            file="Source/sampler_Waveform.h"/>
+      <FILE id="G3afYI" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="miIwEJ" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="TlpToB" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="a3lW5Q" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_midi_ci" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022" extraDefs="JUCE_MODAL_LOOPS_PERMITTED=1">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Sampler" enablePluginBinaryCopyStep="1"
+                       vst3BinaryLocation="C:\Users\franc\Documents\VST Plugins"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Sampler" enablePluginBinaryCopyStep="1"
+                       vst3BinaryLocation="C:\Users\franc\Documents\VST Plugins"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_midi_ci" path="../../../../../Program Files/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+    <XCODE_MAC targetFolder="Builds/MacOSX" extraDefs="JUCE_MODAL_LOOPS_PERMITTED=1">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Sampler"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Sampler"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_midi_ci" path="../../../../../Program Files/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
